@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2016", 
+    "outDir": "./dist",               /* Allow 'import x from y' when a module doesn't have a default export. */
+    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
+    "strict": true,                   /* Skip type checking .d.ts files that are included with TypeScript. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "moduleResolution": "node",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    "baseUrl": "./src",                                  /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "@controllers/*": ["controllers/*"],
+      "@services/*": ["services/*"],
+      "@repositories/*": ["repositories/*"],
+      "@models/*": ["models/*"],
+      "@routes/*": ["routes/*"],
+      "@server/*": ["server/*"],
+      "@config/*": ["config/*"]
+    },                                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
+    "esModuleInterop": true,                             /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,  
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+  "include":["src"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
