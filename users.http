@@ -1,0 +1,27 @@
+post http://localhost:4001/api/v1/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Daniel Ballesteros",
+    "username": "Daniel4",
+    "email": "wert4@gmail.com"
+}
+
+###
+get http://localhost:4001/api/v1/users HTTP/1.1
+
+###
+put http://localhost:4001/api/v1/users/67b79d0fe4216ff07a63998e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Luis Bernal",
+    "username": "Luis1"
+}
+
+######
+GET http://localhost:4001/api/v1/users/67b75674da8eb100aa76814a HTTP/1.1
+Content-Type: application/json
+###
+DELETE  http://localhost:4001/api/v1/users/67b789f50468425da89d4fc5 HTTP/1.1
+Content-Type: application/json
