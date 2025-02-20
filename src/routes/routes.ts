@@ -9,12 +9,6 @@ import { IRolesRepository, IRolesService, Roles } from "types/RolesTypes";
 import { IUserRepository, IUserService, User} from "types/UsersTypes";
 
 const router = Router();
-
-// const userRepository: IUserRepository = new UserRepository();
-// const userService: IUserService = new UserService(userRepository);
-
-// const rolesRepository: IRolesRepository = new RolesRepository();
-// const rolesService: IRolesService = new RolesService(rolesRepository);
  
 export default () => {
    
