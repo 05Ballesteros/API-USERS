@@ -19,8 +19,6 @@ export default () => {
     router.put("/users/:id", updateUsers);
     router.delete("/users/:id", deleteUsers);
 
-    //RUtas para los roles 
-
     // //Rutas para los roles
     router.get("/roles", findRoles);
     router.get("/roles/:id", findRolesById);
